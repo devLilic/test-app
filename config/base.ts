@@ -2,30 +2,30 @@ import type { AppConfig } from './types'
 
 export const baseConfig: AppConfig = {
   environment: 'development',
-  appName: 'default-electron-app',
+  appName: 'test-app',
   features: {
-    i18n: false,
-    autoUpdate: false,
+    i18n: true,
+    autoUpdate: true,
     appProtection: false,
     licensing: false,
     database: false,
     logging: true,
   },
   update: {
-    enabled: false,
+    enabled: true,
     channel: 'latest',
     autoCheck: true,
     autoDownload: false,
     allowPrerelease: false,
     provider: {
       provider: 'github',
-      owner: 'YOUR_GITHUB_OWNER',
-      repo: 'YOUR_RELEASE_REPO',
-      visibility: 'public',
+      owner: 'test-owner',
+      repo: 'test-releases',
+      visibility: 'private',
     },
   },
   i18n: {
-    enabled: false,
+    enabled: true,
     defaultLanguage: 'ro',
     supportedLanguages: ['en', 'ro', 'ru'],
     namespaces: ['common', 'settings', 'updater', 'errors', 'licensing'],
