@@ -1,11 +1,13 @@
 import { registerRendererModuleRegistry } from './bootstrap/registerRendererModuleRegistry'
 import logoVite from '@/assets/logo-vite.svg'
 import logoElectron from '@/assets/logo-electron.svg'
+import { useDocumentTitle } from '@/shared/hooks/useDocumentTitle'
 import './App.css'
 
 function App() {
   const config = window.appApi.getConfig()
   const rendererModules = registerRendererModuleRegistry(config)
+  useDocumentTitle()
 
   return (
     <div className='App'>

@@ -8,7 +8,7 @@ import type { AppConfig } from '../../../config/types'
 export function registerCoreIpc(config: AppConfig) {
   ipcMain.handle(ipcInvokeChannels.appGetInfo, () => {
     return {
-      appName: config.appName,
+      appName: app.getName(),
       environment: config.environment,
       version: app.getVersion(),
     }

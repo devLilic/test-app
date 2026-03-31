@@ -1,5 +1,5 @@
 {
-  "app.title": "Electron + Vite + React",
+  "app.title": "Тестовая программа Electron + Vite + React",
   "app.subtitle": "Базовая структура стартера переводится на модульную архитектуру.",
   "app.learnMore": "Нажмите на логотип Electron + Vite, чтобы узнать больше",
   "update.check": "Проверить обновление",
